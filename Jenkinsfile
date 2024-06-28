@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        REPO_URL = 'https://github.com/wasAmesha/CropMarketplace_CI_CD_Pipeline.git'
+        REPO_URL = 'https://github.com/wasAmesha/DevOps_CI_CD_Pipeline.git'
         DOCKERHUB_CREDENTIALS = credentials('dockerPassword')
         DOCKER_IMAGE_NAME = 'ameshawas/cropxchange'
     }
