@@ -1,8 +1,8 @@
 version: "3"
 services:
-  mongo:
+  db:
     image: mongo:latest
-    container_name: mongo
+    container_name: db
     ports:
       - "27017:27017"
     volumes:
@@ -15,7 +15,7 @@ services:
     ports:
       - "8000:8000"
     depends_on:
-      - mongo
+      - db
     environment:
       - MONGO_URL=mongodb+srv://Weather99:chami1999928@weatherdb.kmumq9l.mongodb.net/?retryWrites=true&w=majority
     volumes:
