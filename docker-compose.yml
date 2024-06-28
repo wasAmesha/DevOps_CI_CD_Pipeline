@@ -22,7 +22,7 @@ services:
       - ./backend:/app
       - /app/node_modules
 
-  frontend-1:
+  frontend_1:
     build:
       context: ./frontend
     container_name: frontend_1
